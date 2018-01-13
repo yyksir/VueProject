@@ -14,6 +14,7 @@
 
 <script>
   import IndexHeader from './header'
+  import axios from 'axios'
   import IndexSearch from './search'
   import IndexOrdinaryplace from './ordinaryplace'
   import IndexMyselfplace from './myselfplace'
@@ -34,6 +35,19 @@
       IndexCityclassify,
       IndexCitylist,
       IndexRilist
+    },
+    created () {
+      this.getSearchInfo()
+    },
+    watch: {
+      '$route' () {
+        this.getSearchInfo()
+      }
+    },
+    methods: {
+      getSearchInfo () {
+        axios.get('/api/search.json')
+      }
     }
   }
 </script>

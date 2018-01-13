@@ -1,12 +1,33 @@
 <template>
-  <div class="citylist">
-      地区名
+  <div class="citylist" >
+    <div v-for="item in list">
+      {{item}}
+    </div>
   </div>
 </template>
 
 <script>
+  import axios from 'axios'
   export default {
-    name: 'index-citylist'
+    name: 'index-citylist',
+    data () {
+      return {
+        list: []
+      }
+    },
+    methods: {
+      getSearchInfo () {
+        axios.get('/api/search.json?id=' + this.$route.params.id)
+              .then(this.handleGetDataSucc.bind(this))
+              .catch(this.handleGetDataErr.bind(this))
+      },
+      handleGetDataSucc (res) {
+        this.list = res.data
+      },
+      handleGetDataErr () {
+
+      }
+    }
   }
 </script>
 

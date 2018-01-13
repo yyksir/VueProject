@@ -1,6 +1,8 @@
 <template>
   <div class="header">
-    <div class="back-re iconfont">&#xe624;</div>
+    <router-link to="/">
+      <div class="back-re iconfont">&#xe624;</div>
+    </router-link>
     <div class="chinaiotab">
       <div class="chinaIO">
         <div class="chinaI china-re" @click="handleBtnClickleft">国 内</div>
@@ -38,6 +40,7 @@
       text-align: center
       font-size: .4rem
       font-weight: bold
+      color: #fff
     .chinaiotab
       display: flex
       width: 3.66rem
