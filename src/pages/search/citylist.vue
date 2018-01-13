@@ -1,8 +1,6 @@
 <template>
   <div class="citylist" >
-    <div v-for="item in list">
-      {{item}}
-    </div>
+    城市
   </div>
 </template>
 

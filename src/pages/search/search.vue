@@ -1,8 +1,6 @@
 <template>
   <div class="search">
-    <div class="search-input">
-      输 入 城 市 名 或 拼 音
-    </div>
+    <input class="search-input">输 入 城 市 名 或 拼 音</input>
   </div>
 </template>
 
