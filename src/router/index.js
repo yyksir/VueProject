@@ -12,7 +12,7 @@ export default new Router({
       name: 'Index',
       component: Index
     }, {
-      path: '/search',
+      path: '/search/:id',
       name: 'search',
       component: Search
     }
