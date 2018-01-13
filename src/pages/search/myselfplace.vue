@@ -1,6 +1,6 @@
 <template>
   <div class="myselfplace">
-    <div class="mylocation">
+    <div class="mylocation" @click="handlePlaceBtnClick">
       北京
     </div>
   </div>
@@ -8,7 +8,12 @@
 
 <script>
   export default {
-    name: 'index-myselfplace'
+    name: 'index-myselfplace',
+    methods: {
+      handlePlaceBtnClick: function () {
+        this.style.border = 'red'
+      }
+    }
   }
 </script>
 

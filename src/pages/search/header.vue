@@ -49,11 +49,13 @@
       .chinaIO
         display: flex
         width: 4.06rem
-        height: .62rem
+        height: .6rem
         font-size: .26rem
         border: .02rem solid #fff
         .chinaI
           border-right: .02rem solid #fff
+          background: #fff
+          color: #00aec6
       .china-re
         width: 2rem
         height: .6rem

@@ -8,22 +8,21 @@
   import axios from 'axios'
   export default {
     name: 'index-citylist',
-    data () {
-      return {
-        list: []
-      }
+    props: {
+      list: Object,
+      hotcity: Array
     },
     methods: {
       getSearchInfo () {
-        axios.get('/api/search.json?id=' + this.$route.params.id)
+        axios.get('/api/search.json')
               .then(this.handleGetDataSucc.bind(this))
               .catch(this.handleGetDataErr.bind(this))
       },
       handleGetDataSucc (res) {
-        this.list = res.data
+        console.log(res)
       },
       handleGetDataErr () {
-
+        console.log('哈哈')
       }
     }
   }

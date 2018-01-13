@@ -3,7 +3,10 @@
     <index-header></index-header>
     <index-search></index-search>
     <index-ordinaryplace></index-ordinaryplace>
-    <index-myselfplace></index-myselfplace>
+    <index-myselfplace class="list" 
+                        :list="list" 
+                        :hotcity="hotcity">
+    </index-myselfplace>
     <index-hotcity></index-hotcity>
     <index-hotcitylist></index-hotcitylist>
     <index-cityclassify></index-cityclassify>
@@ -25,6 +28,12 @@
   import IndexRilist from './rilist'
   export default {
     name: 'search',
+    data () {
+      return {
+        list: [],
+        hotcity: []
+      }
+    },
     components: {
       IndexHeader,
       IndexSearch,
@@ -39,22 +48,23 @@
     created () {
       this.getSearchInfo()
     },
-    watch: {
-      '$route' () {
-        this.getSearchInfo()
-      }
-    },
     methods: {
       getSearchInfo () {
-        axios.get('/api/search.json?id=' + this.$route.params.id)
+        axios.get('/api/search.json')
             .then(this.handleGetSearchSucc.bind(this))
             .catch(this.handleGetSearchErr.bind(this))
       },
       handleGetSearchSucc (res) {
-        console.log(res)
+       res && (res = res.data)
+       if (res && res.data) {
+         res.data.list && (this.list = res.data.list)
+         res.data.hotcity && (this.hotcity = res.data.hotcity)
+       } else {
+         this.handleGetSearchErr()
+       }
       },
       handleGetSearchErr () {
-        
+        console.log('请求失败')
       }
     }
   }

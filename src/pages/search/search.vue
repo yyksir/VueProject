@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <input class="search-input">输 入 城 市 名 或 拼 音</input>
+    <input class="search-input" type="text" placeholder="请输入城市名或拼音"/>
   </div>
 </template>
 
@@ -18,10 +18,11 @@ export default {
     padding-left: 0.2rem
     line-height: .66rem
     background: #00aec6
-    text-align: center
     .search-input
       width: 6.88rem
       height: .68rem
+      border: 0
+      text-align: center
       font-size: .26rem
       line-height: .63rem
       background: #fff

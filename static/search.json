@@ -1,6 +1,25 @@
 {
   "ret": true,
   "data": {
-    
+    "hotcity": [{
+      "id": "001",
+      "city": "北京"
+    },
+    {
+      "id": "002",
+      "city": "西安"
+    }],
+    "list": {
+      "A": [{
+        "name": "阿坝藏族羌族自治州",
+        "spell": "abazangzuqiangzuzizhizhou",
+        "id": 1
+      }],
+      "B": [{
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": 2
+      }]
+    }
   }
 }
