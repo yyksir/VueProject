@@ -46,9 +46,6 @@
     },
     methods: {
       getSearchInfo () {
-<<<<<<< HEAD
-        axios.get('/api/search.json')
-=======
         axios.get('/api/search.json?id=' + this.$route.params.id)
             .then(this.handleGetSearchSucc.bind(this))
             .catch(this.handleGetSearchErr.bind(this))
@@ -57,8 +54,7 @@
         console.log(res)
       },
       handleGetSearchErr () {
-
->>>>>>> 758d26ac88a1f1dc826b376426905a0175f06ec4
+        
       }
     }
   }
