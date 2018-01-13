@@ -23,7 +23,7 @@
   import IndexCitylist from './citylist'
   import IndexRilist from './rilist'
   export default {
-    name: 'index',
+    name: 'search',
     components: {
       IndexHeader,
       IndexSearch,
