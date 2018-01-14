@@ -15,7 +15,7 @@ export default {
   .search
     display: flex
     height: .76rem
-    padding-left: 0.2rem
+    padding-left: .2rem
     line-height: .66rem
     background: #00aec6
     .search-input

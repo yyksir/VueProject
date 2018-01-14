@@ -9,7 +9,6 @@
     </index-myselfplace>
     <index-hotcity></index-hotcity>
     <index-hotcitylist></index-hotcitylist>
-    <index-cityclassify></index-cityclassify>
     <index-citylist></index-citylist>
     <index-rilist></index-rilist>
   </div>
@@ -23,14 +22,13 @@
   import IndexMyselfplace from './myselfplace'
   import IndexHotcity from './hotcity'
   import IndexHotcitylist from './hotcitylist'
-  import IndexCityclassify from './cityclassify'
   import IndexCitylist from './citylist'
   import IndexRilist from './rilist'
   export default {
     name: 'search',
     data () {
       return {
-        list: [],
+        list: {},
         hotcity: []
       }
     },
@@ -41,7 +39,6 @@
       IndexMyselfplace,
       IndexHotcity,
       IndexHotcitylist,
-      IndexCityclassify,
       IndexCitylist,
       IndexRilist
     },
@@ -55,13 +52,14 @@
             .catch(this.handleGetSearchErr.bind(this))
       },
       handleGetSearchSucc (res) {
-       res && (res = res.data)
-       if (res && res.data) {
-         res.data.list && (this.list = res.data.list)
-         res.data.hotcity && (this.hotcity = res.data.hotcity)
-       } else {
-         this.handleGetSearchErr()
-       }
+        console.log(res)
+        res && (res = res.data)
+        if (res && res.data) {
+          res.data.list && (this.list = res.data.list)
+          res.data.hotcity && (this.hotcity = res.data.hotcity)
+        } else {
+          this.handleGetSearchErr()
+        }
       },
       handleGetSearchErr () {
         console.log('请求失败')
@@ -71,4 +69,5 @@
 </script>
 <style lang="stylus" scoped>
   @import "../../assets/stylus/varibles.styl"
+
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" id="header">
     <router-link to="/">
       <div class="back-re iconfont">&#xe624;</div>
     </router-link>
@@ -16,12 +16,27 @@
 <script>
   export default {
     name: 'index-header',
+    mounted () {
+      window.addEventListener('scroll', this.handleScroll)
+    },
     methods: {
       handleBtnClickleft: function () {
         console.log('一我被触发了')
       },
       handleBtnClickright: function () {
         console.log('二我被触发了')
+      },
+      handleScroll: function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        var headerFixed = document.getElementById('header')
+        var CeilingHeader = 0.9
+        console.log(scrollTop)
+        if (scrollTop >= CeilingHeader) {
+          headerFixed.style.top = '0'
+          headerFixed.style.position = 'fixed'
+        } else {
+          headerFixed.style.position = ''
+        }
       }
     }
   }
@@ -30,13 +45,14 @@
 <style lang="stylus" scoped>
   @import "../../assets/stylus/varibles.styl"
   .header
-    display: flex
+    width: 100%
     height: .98rem
     line-height: .98rem
-    background: #00aec6
+    background: $bgColorl
     color: #fff
     .back-re
       width: .58rem
+      float: left
       text-align: center
       font-size: .4rem
       font-weight: bold
@@ -46,6 +62,7 @@
       width: 3.66rem
       height: .5rem
       padding: .16rem 1.14rem
+      float: left
       .chinaIO
         display: flex
         width: 4.06rem

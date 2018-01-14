@@ -13,6 +13,11 @@
       handlePlaceBtnClick: function () {
         this.style.border = 'red'
       }
+    },
+    wathch: {
+      list () {
+        console.log(this.list)
+      }
     }
   }
 </script>
