@@ -4,15 +4,21 @@
     <div class="search">
       <span class="iconfont search-icon">&#xe632;</span>请输入搜索内容
     </div>
-    <div class="city">
-      北京
+    <div class="city" @click="handleCityClick">
+      {{city}}
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'index-header'
+  name: 'index-header',
+  props: ['city'],
+  methods: {
+    handleCityClick () {
+      this.$router.push('/city')
+    }
+  }
 }
 </script>
 
