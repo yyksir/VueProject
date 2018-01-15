@@ -33,10 +33,28 @@
 
 .icon-gongyu:before { content: "\e692"; }
 
+<<<<<<< HEAD
+=======
+.icon-wendang:before { content: "\e636"; }
+
+.icon-xingxing1:before { content: "\e641"; }
+
+>>>>>>> origin/master
 .icon-piao:before { content: "\e61b"; }
 
 .icon-zan:before { content: "\e60f"; }
 
+<<<<<<< HEAD
+=======
+.icon-alert:before { content: "\e604"; }
+
+.icon-star:before { content: "\e60c"; }
+
+.icon-temple-of-heaven:before { content: "\e66f"; }
+
+.icon-icon-test:before { content: "\e606"; }
+
+>>>>>>> origin/master
 .icon-coordinates_fill:before { content: "\e6ec"; }
 
 .icon-coordinates:before { content: "\e6ed"; }
@@ -45,5 +63,12 @@
 
 .icon-fanhui:before { content: "\e624"; }
 
+<<<<<<< HEAD
+=======
+.icon-jiantouyou:before { content: "\e62d"; }
+
+.icon-jiantouxia:before { content: "\e62e"; }
+
+>>>>>>> origin/master
 .icon-sousuo:before { content: "\e632"; }
 

@@ -1,0 +1,51 @@
+{
+	"ret":true,
+	"data": {
+		"swiperList":[
+		{
+        "id": 1001,
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1410/34/f540a04367d06820af4dfeaf0ad40257.water.jpg_710x360_c86bcf76.jpg"
+        }, 
+        {
+        "id":1002,
+        "imgUrl": "http://img1.qunarzz.com/sight/p0/1410/9d/fe8109ab5df1c9c324e74284fa802e72.water.jpg_710x360_3777f44e.jpg"
+        },
+        {
+        "id":1003,
+        "imgUrl": "http://img1.qunarzz.com/wugc/p180/201306/16/7f08e81624346b1693835fbb.jpg_710x360_73786ab9.jpg"
+        }
+        ],
+        "recommend":[
+        	{
+        		"name":"【上午场】故宫成人票凭身份证入场",
+        		"money":"￥40",
+        		"imgUrl":"http://p1-q.mafengwo.net/s10/M00/B4/32/wKgBZ1nA0aqABQ6GACT5xoJv-Y4957.png?imageMogr2%2Fthumbnail%2F%21185x130r%2Fgravity%2FCenter%2Fcrop%2F%21185x130%2Fquality%2F100"
+        	},
+        	{
+        		"name":"【下午场】故宫成人票凭身份证入场",
+        		"money":"￥40",
+        		"imgUrl":"http://p1-q.mafengwo.net/s10/M00/B4/32/wKgBZ1nA0aqABQ6GACT5xoJv-Y4957.png?imageMogr2%2Fthumbnail%2F%21185x130r%2Fgravity%2FCenter%2Fcrop%2F%21185x130%2Fquality%2F100"
+        	},
+        	{
+        		"name":"故宫导游",
+        		"money":"￥20",
+        		"imgUrl":"http://p1-q.mafengwo.net/s10/M00/B4/32/wKgBZ1nA0aqABQ6GACT5xoJv-Y4957.png?imageMogr2%2Fthumbnail%2F%21185x130r%2Fgravity%2FCenter%2Fcrop%2F%21185x130%2Fquality%2F100"
+        	},
+        	{
+        		"name":"颐和园",
+        		"money":"￥20",
+        		"imgUrl":"http://b2-q.mafengwo.net/s1/M00/74/D1/wKgBm07llRTKgaSMAAQP9gvxRbY47.jpeg?imageMogr2%2Fthumbnail%2F%21380x270r%2Fgravity%2FCenter%2Fcrop%2F%21380x270%2Fquality%2F100"
+        	},
+        	{
+        		"name":"天安门",
+        		"money":"￥30",
+        		"imgUrl":"http://n4-q.mafengwo.net/s5/M00/A1/86/wKgB3FEL0bmAOpLQAAOeCG_bWyE98.jpeg?imageMogr2%2Fthumbnail%2F%21380x270r%2Fgravity%2FCenter%2Fcrop%2F%21380x270%2Fquality%2F100"
+        	},
+        	{
+        		"name":"天坛",
+        		"money":"￥30",
+        		"imgUrl":"http://b4-q.mafengwo.net/s5/M00/B2/F0/wKgB3FDjqrmAZW91AAtxfFvcYKg52.jpeg?imageMogr2%2Fthumbnail%2F%21380x270r%2Fgravity%2FCenter%2Fcrop%2F%21380x270%2Fquality%2F100"
+        	}
+        ]
+	}
+}

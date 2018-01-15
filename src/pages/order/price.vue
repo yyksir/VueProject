@@ -1,7 +1,7 @@
 <template>
   <div class="price">
       <div class="top">
-        <h2>［上午场］故宫成人票+故宫全景</h2><h3>¥50</h3><span>/张</span>  
+        <h2>［上午场］故宫成人票+故宫全景</h2><h3><span>¥50</span>/张</h3>  
       </div>
       <div class="center">
           <h4>手绘地图</h4>

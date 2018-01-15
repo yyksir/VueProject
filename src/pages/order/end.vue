@@ -57,8 +57,8 @@ export default {
       positon: absolute
       width: 7rem
       height: 3rem
-      left: 0
-      top: 0
+      left: 34
+      top: 034
       z-index: 6
       background: red
 </style>
