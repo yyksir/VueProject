@@ -3,20 +3,16 @@
     <index-header></index-header>
     <index-search></index-search>
     <index-ordinaryplace></index-ordinaryplace>
-    <index-myselfplace class="list" 
-                        :list="list" 
-                        :hotcity="hotcity">
-    </index-myselfplace>
+    <index-myselfplace></index-myselfplace>
     <index-hotcity></index-hotcity>
     <index-hotcitylist></index-hotcitylist>
-    <index-citylist></index-citylist>
+    <index-citylist :list="cityInfo"></index-citylist>
     <index-rilist></index-rilist>
   </div>
 </template>
 
 <script>
   import IndexHeader from './header'
-  import axios from 'axios'
   import IndexSearch from './search'
   import IndexOrdinaryplace from './ordinaryplace'
   import IndexMyselfplace from './myselfplace'
@@ -24,14 +20,9 @@
   import IndexHotcitylist from './hotcitylist'
   import IndexCitylist from './citylist'
   import IndexRilist from './rilist'
+  import axios from 'axios'
   export default {
     name: 'search',
-    data () {
-      return {
-        list: {},
-        hotcity: []
-      }
-    },
     components: {
       IndexHeader,
       IndexSearch,
@@ -42,28 +33,28 @@
       IndexCitylist,
       IndexRilist
     },
-    created () {
-      this.getSearchInfo()
+    data () {
+      return {
+        cityInfo: []
+      }
     },
     methods: {
-      getSearchInfo () {
+      getIndexData () {
         axios.get('/api/search.json')
-            .then(this.handleGetSearchSucc.bind(this))
-            .catch(this.handleGetSearchErr.bind(this))
+              .then(this.handleGetDataSucc.bind(this))
+              .catch(this.handleGetDataErr.bind(this))
       },
-      handleGetSearchSucc (res) {
-        console.log(res)
-        res && (res = res.data)
-        if (res && res.data) {
-          res.data.list && (this.list = res.data.list)
-          res.data.hotcity && (this.hotcity = res.data.hotcity)
-        } else {
-          this.handleGetSearchErr()
-        }
+      handleGetDataSucc (res) {
+        const data = res.data.data
+        this.cityInfo = data.citylists
+        console.log(this.cityInfo)
       },
-      handleGetSearchErr () {
-        console.log('请求失败')
+      handleGetDataErr () {
+        console.log('我失败了')
       }
+    },
+    created () {
+      this.getIndexData()
     }
   }
 </script>

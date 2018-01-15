@@ -1,13 +1,18 @@
 <template>
-  <index-header></index-header>
+  <div>
+    <index-header></index-header>
+    <index-banner></index-banner>
+  </div>
 </template>
 
 <script>
   import IndexHeader from './header'
+  import IndexBanner from './banner'
   export default {
     name: 'index',
     components: {
-      IndexHeader
+      IndexHeader,
+      IndexBanner
     }
   }
 </script>

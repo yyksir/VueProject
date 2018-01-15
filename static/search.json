@@ -9,17 +9,185 @@
       "id": "002",
       "city": "西安"
     }],
-    "list": {
+    "citylists": {
       "A": [{
         "name": "阿坝藏族羌族自治州",
         "spell": "abazangzuqiangzuzizhizhou",
-        "id": 1
+        "id": "0003"
       }],
       "B": [{
           "name": "阿坝藏族羌族自治州",
           "spell": "abazangzuqiangzuzizhizhou",
-          "id": 2
-      }]
+          "id": "0004"
+      }],
+      "C": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0005"
+        }
+      ],
+      "D": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0006"
+        }
+      ],
+      "E": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0006"
+        }
+      ],
+      "F": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0007"
+        }
+      ],
+      "J": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0008"
+        }
+      ],
+      "H": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0009"
+        }
+      ],
+      "I": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0010"
+        }
+      ],
+      "G": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0011"
+        }
+      ],
+      "K": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0012"
+        }
+      ],
+      "L": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0013"
+        }
+      ],
+      "M": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0014"
+        }
+      ],
+      "N": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0015"
+        }
+      ],
+      "O": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0016"
+        }
+      ],
+      "P": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0017"
+        }
+      ],
+      "Q": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0018"
+        }
+      ],
+      "R": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "S": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "T": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "U": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "V": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "W": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "X": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "Y": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ],
+      "Z": [
+        {
+          "name": "阿坝藏族羌族自治州",
+          "spell": "abazangzuqiangzuzizhizhou",
+          "id": "0019"
+        }
+      ]
     }
   }
 }
