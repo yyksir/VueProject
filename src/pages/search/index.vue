@@ -60,5 +60,4 @@
 </script>
 <style lang="stylus" scoped>
   @import "../../assets/stylus/varibles.styl"
-
 </style>
