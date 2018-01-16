@@ -24,22 +24,20 @@
   </div>
 </template>
 <script>
+  import { mapState, mapMutations } from 'vuex'
   export default {
     name: 'cityList',
     props: {
       hotCityInfo: Array,
-      domesticCityList: Array,
-      city: String
+      domesticCityList: Array
     },
-    data () {
-      return {
-        city: localStorage.city ? localStorage.city : '北京'
-      }
+    computed: {
+      ...mapState(['city'])
     },
     methods: {
+      ...mapMutations(['changeCity']),
       handleClick (e) {
-        localStorage.city = e.target.innerHTML
-        this.$bus.$emit('change', e.target.innerHTML)
+        this.changeCity(e.target.innerHTML)
         this.$router.go(-1)
       }
     },

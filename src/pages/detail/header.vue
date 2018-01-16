@@ -1,8 +1,10 @@
 <template>
   <div class="detailHeader">
+  	<router-link to="/">
   	<div class="header-back">
   			<span class="back iconfont">&#xe624;</span> 
   	</div>
+  	</router-link>
   	<div class="header-figure">
   		<img class="place-img" src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg">
   	</div>

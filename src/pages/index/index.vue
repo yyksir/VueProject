@@ -1,6 +1,6 @@
 <template>
   <div>
-    <index-header :city="city"></index-header>
+    <index-header ref="header"></index-header>
     <index-swiper :list="swiperInfo"></index-swiper>
     <IndexIcons :list="icons"></IndexIcons>
     <div class="position-con">
@@ -14,7 +14,7 @@
       </div>
     </div>
     <index-recommend :sights="sights"></index-recommend>
-    </div>
+  </div>
 
 </template>
 
@@ -24,6 +24,7 @@
   import IndexIcons from './icons'
   import IndexRecommend from './recommend'
   import axios from 'axios'
+  import { mapState, mapActions } from 'vuex'
   export default {
     name: 'index',
     components: {
@@ -34,16 +35,20 @@
     },
     data () {
       return {
-        city: '',
         swiperInfo: [],
         icons: [],
         sights: []
       }
     },
+    computed: {
+      ...mapState({
+        city: 'city'
+      })
+    },
     methods: {
+      ...mapActions(['changeCityDelayFiveSeconds']),
       getIndexData () {
-        const city = localStorage.city ? localStorage.city : '北京'
-        axios.get('/api/index.json?city=' + city)
+        axios.get('/api/index.json?city=' + this.city)
         .then(this.handleGetDataSucc.bind(this))
         .catch(this.handleGetDataErr.bind(this))
       },
@@ -51,24 +56,22 @@
         const data = res.data.data
         this.swiperInfo = data.swiperList
         this.icons = data.iconsList
-        this.city = data.city
         this.sights = data.sights
-        localStorage.city = data.city
+        if(!this.city){
+          this.changeCityDelayFiveSeconds(data.city)
+        }
       },
       handleGetDataErr () {
         console.log('error')
-      },
-      bindEvents () {
-        this.$bus.$on('change', this.handleCityChange.bind(this))
-      },
-      handleCityChange (value) {
-        this.city = value
-        this.getIndexData()
       }
     },
     created () {
       this.getIndexData()
-      this.bindEvents()
+    }
+    watch: {
+      city () {
+        this.getIndexData()
+      }
     }
   }
 </script>
