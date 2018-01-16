@@ -1,0 +1,125 @@
+{
+  "ret":true,
+  "data":{
+      "menulist":[
+    {
+      "typeName":"一日游",
+      "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/8b/4bea8e26d8f12502.png",
+      "num":34,
+      "childData": [{
+                      "id":"123",
+                      "name":"当地游"
+                    },
+                    {
+                      "id":"234",
+                      "name":"周边游"
+                    }
+                    ]
+    }
+    ,
+    {
+      "typeName":"文化古迹",
+      "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/15/d94c0a3f16a48a02.png",
+      "num":39,
+      "childData": [{
+        "id":"12323454",
+        "name":"古镇"
+      },
+        {
+          "id":"2341114",
+          "name":"遗址"
+        }
+      ]
+    },
+    {
+      "typeName":"交通",
+      "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/8b/4bea8e26d8f12502.png",
+      "num":40,
+      "childData": [{
+        "id":"1234",
+        "name":"直通车"
+      },
+        {
+          "id":"2343074",
+          "name":"索道"
+        },
+        {
+          "id":"234906",
+          "name":"租车"
+        }
+      ]
+    },
+    {
+      "typeName":"健身",
+      "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/8b/4bea8e26d8f12502.png",
+      "num":34,
+      "childData": [{
+        "id":"1234",
+        "name":"直通车"
+      },
+        {
+          "id":"245678344",
+          "name":"索道"
+        },
+        {
+          "id":"233446",
+          "name":"租车"
+        }
+      ]
+    },
+    {
+      "typeName":"温泉",
+      "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/3e/d07407699d56c202.png",
+      "num":4,
+      "childData": [{
+        "id":"1234564",
+        "name":"直通车"
+      },
+        {
+          "id":"236544",
+          "name":"索道"
+        },
+        {
+          "id":"234766",
+          "name":"租车"
+        }
+      ]
+    },
+        {
+          "typeName":"展馆",
+          "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/8b/4bea8e26d8f12502.png",
+          "num":34,
+          "childData": [{
+            "id":"1234",
+            "name":"直通车"
+          },
+            {
+              "id":"245678344",
+              "name":"索道"
+            },
+            {
+              "id":"233446",
+              "name":"租车"
+            }
+          ]
+        },
+        {
+          "typeName":"自然风光",
+          "srcVal": "http://img1.qunarzz.com/piao/fusion/1608/8b/4bea8e26d8f12502.png",
+          "num":5,
+          "childData": [{
+            "id":"1234",
+            "name":"直通车"
+          },
+            {
+              "id":"245678344",
+              "name":"索道"
+            },
+            {
+              "id":"233446",
+              "name":"租车"
+            }
+          ]
+        }
+  ]}
+}

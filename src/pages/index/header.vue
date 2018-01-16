@@ -4,15 +4,24 @@
     <div class="search">
       <span class="iconfont search-icon">&#xe632;</span>请输入搜索内容
     </div>
-    <div class="city">
-      北京
+    <div class="city" @click="handleCityClick">
+      {{doubleCity}}
     </div>
   </div>
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
-  name: 'index-header'
+  name: 'index-header',
+  computed: {
+    ...mapGetters(['doubleCity'])
+  },
+  methods: {
+    handleCityClick () {
+      this.$router.push('/city')
+    }
+  }
 }
 </script>
 
@@ -20,7 +29,7 @@ export default {
   @import "../../assets/stylus/varibles.styl";
   .header
     display: flex
-    height: 0.88rem
+    height: .88rem
     line-height: .88rem
     background: $bgColor
     color: #fff
