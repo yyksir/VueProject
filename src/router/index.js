@@ -5,6 +5,8 @@ import Index from '@/pages/index'
 import City from '@/pages/city'
 import DayTrip from '@/pages/daytrip'
 import Detail from '@/pages/detail'
+import Travel from '@/pages/travel/travel'
+
 
 Vue.use(Router)
 
@@ -30,6 +32,12 @@ export default new Router({
       path: '/detail',
       name: 'Detail',
       component: Detail
+
+    },
+    {
+      path: '/travel',
+      name: 'Travel',
+      component: Travel
     }
   ]
 })
