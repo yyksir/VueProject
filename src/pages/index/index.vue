@@ -1,6 +1,6 @@
 <template>
   <div>
-    <index-header ref="header"></index-header>
+    <index-header></index-header>
     <index-swiper :list="swiperInfo"></index-swiper>
     <IndexIcons :list="icons"></IndexIcons>
     <div class="position-con">
@@ -67,7 +67,7 @@
     },
     created () {
       this.getIndexData()
-    }
+    },
     watch: {
       city () {
         this.getIndexData()
