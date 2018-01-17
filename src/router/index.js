@@ -6,7 +6,7 @@ import City from '@/pages/city'
 import DayTrip from '@/pages/daytrip'
 import Detail from '@/pages/detail'
 import Travel from '@/pages/travel/travel'
-import Search from '@/pages/travel/search'
+import Search from '@/pages/search'
 
 Vue.use(Router)
 
@@ -37,8 +37,7 @@ export default new Router({
       name: 'Detail',
       component: Detail
 
-    },
-    {
+    }, {
       path: '/travel',
       name: 'Travel',
       component: Travel
