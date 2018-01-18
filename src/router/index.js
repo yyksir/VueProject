@@ -15,12 +15,11 @@ export default new Router({
       path: '/details',
       name: 'Details',
       component: Details
-    },
-    {
+    }, {
       path: '/travel',
       name: 'Travel',
       component: Travel
-    },{
+    }, {
       path: '/',
       name: 'Index',
       component: Index

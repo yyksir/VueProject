@@ -57,7 +57,7 @@
         this.swiperInfo = data.swiperList
         this.icons = data.iconsList
         this.sights = data.sights
-        if(!this.city){
+        if (!this.city) {
           this.changeCityDelayFiveSeconds(data.city)
         }
       },
